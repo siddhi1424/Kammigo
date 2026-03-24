@@ -1,5 +1,5 @@
 const Job = require("../models/Job");
-const WorkerProfile = require("../models/workerProfile");
+const WorkerProfile = require("../models/WorkerProfile");
 
 const createJob = async (req, res) => {
   try {
