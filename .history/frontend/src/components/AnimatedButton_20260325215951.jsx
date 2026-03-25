@@ -8,7 +8,7 @@ const AnimatedButton = ({ children, ...props }) => {
       variants={buttonAnimation}
       whileHover="hover"
       whileTap="tap"
-      {...props}
+      //   {...props}
     >
       {children}
     </motion.div>

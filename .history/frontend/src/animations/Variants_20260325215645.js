@@ -10,5 +10,5 @@ export const buttonAnimation = {
 
 export const cardAnimation = {
   hover: { scale: 1.03 },
-  tap: { scale: 0.95 },
+  tap: { scaleX: 0.95 },
 };

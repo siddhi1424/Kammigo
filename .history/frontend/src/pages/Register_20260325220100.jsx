@@ -117,7 +117,7 @@ const Register = () => {
             </select>
 
             <AnimatedButton
-              className="bg-cyan-600  text-center hover:bg-cyan-700 transition duration-300 p-2 rounded-lg text-white font-semibold"
+              className="bg-cyan-600   hover:bg-cyan-700 transition duration-300 p-2 rounded-lg text-white font-semibold"
               type="submit"
             >
               Register

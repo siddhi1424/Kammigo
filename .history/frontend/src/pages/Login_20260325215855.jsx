@@ -86,7 +86,7 @@ const Login = () => {
             <div>
               <AnimatedButton
                 type="submit"
-                className="w-full text-center bg-cyan-600 hover:bg-cyan-700 rounded-3xl text-white font-semibold py-2 transition duration-300"
+                className="w-full bg-cyan-600 hover:bg-cyan-700 rounded-3xl text-white font-semibold py-2 transition duration-300"
               >
                 Login
               </AnimatedButton>

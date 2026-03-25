@@ -2,7 +2,7 @@ import { useState } from "react";
 import api from "../api/axios";
 import { Link } from "react-router-dom";
 import PageWrapperAni from "../components/PageWrapperAni";
-import AnimatedButton from "../components/AnimatedButton";
+import { buttonAnimation } from "../animations/Variants";
 
 const Login = () => {
   // const navigate = useNavigate();
@@ -84,12 +84,12 @@ const Login = () => {
               />
             </div>
             <div>
-              <AnimatedButton
+              <button
                 type="submit"
-                className="w-full text-center bg-cyan-600 hover:bg-cyan-700 rounded-3xl text-white font-semibold py-2 transition duration-300"
+                className="w-full bg-cyan-600 hover:bg-cyan-700 rounded-3xl text-white font-semibold py-2 transition duration-300"
               >
                 Login
-              </AnimatedButton>
+              </button>
 
               <p className="text-center mt-2 font-semibold text-gray-500">
                 Don't have an account ?{" "}

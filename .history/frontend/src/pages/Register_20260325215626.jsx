@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import api from "../api/axios";
 import { Link } from "react-router-dom";
 import PageWrapperAni from "../components/PageWrapperAni";
-import AnimatedButton from "../components/AnimatedButton";
+import { buttonAnimation } from "../animations/Variants";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -116,12 +116,12 @@ const Register = () => {
               <option value="worker">Looking for a job</option>
             </select>
 
-            <AnimatedButton
-              className="bg-cyan-600  text-center hover:bg-cyan-700 transition duration-300 p-2 rounded-lg text-white font-semibold"
+            <buttonAnimation
+              className="bg-cyan-600   hover:bg-cyan-700 transition duration-300 p-2 rounded-lg text-white font-semibold"
               type="submit"
             >
               Register
-            </AnimatedButton>
+            </buttonAnimation>
             <p className="text-gray-500 font-semibold text-center mt-2">
               Already have an account ?{" "}
               <Link to="/login" className="text-cyan-700">

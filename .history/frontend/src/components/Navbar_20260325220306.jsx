@@ -54,12 +54,12 @@ const Navbar = () => {
                 Dashboard
               </Link>
 
-              <AnimatedButton
+              <button
                 onClick={handleLogout}
                 className="px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition shadow-sm"
               >
                 Logout
-              </AnimatedButton>
+              </button>
             </>
           )}
 
