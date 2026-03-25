@@ -18,13 +18,13 @@ const ProfilePage = () => {
 
   useEffect(() => {
     const fetchProfile = async () => {
-      const res = await api.get("/user/me", {
+      const res = await fetch("/api/user/me", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
 
-      const data = await res.data;
+      const data = await res.json();
 
       const fullUser = {
         ...data.user,
@@ -57,13 +57,13 @@ const ProfilePage = () => {
       formData.append("profilepic", profilepic);
     }
 
-    const res = await api.put("/user/update", {
+    const res = await fetch("http://localhost:5000/api/user/update", {
       method: "PUT",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,
     });
 
-    const data = await res.data;
+    const data = await res.json();
 
     setUser({
       ...data.user,

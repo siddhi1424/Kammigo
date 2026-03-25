@@ -57,13 +57,13 @@ const ProfilePage = () => {
       formData.append("profilepic", profilepic);
     }
 
-    const res = await api.put("/user/update", {
+    const res = await fetch("http://localhost:5000/api/user/update", {
       method: "PUT",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,
     });
 
-    const data = await res.data;
+    const data = await res.json();
 
     setUser({
       ...data.user,
