@@ -53,7 +53,7 @@ const WorkerDashboard = () => {
   return (
     <PageWrapperAni>
       <div className="p-6 max-w-7xl mx-auto">
-        <div className="flex gap-4 justify-between items-center text-cyan-700">
+        <div className="flex justify-between items-center text-cyan-700">
           <h1 className="text-3xl font-bold text-cyan-700 mb-6">
             WorkerDashboard
           </h1>
@@ -61,7 +61,7 @@ const WorkerDashboard = () => {
           {/**edit profile button */}
           <AnimatedButton
             onClick={() => (window.location.href = "/edit-worker-profile")}
-            className="bg-cyan-700 text-white px-4 lg:py-2 mb-4 rounded-lg "
+            className="bg-cyan-700 text-white px-4 py-2 mb-4 rounded-lg flex "
           >
             Edit Profile
           </AnimatedButton>

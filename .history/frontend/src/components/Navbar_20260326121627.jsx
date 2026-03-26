@@ -22,7 +22,7 @@ const Navbar = () => {
           Kammigo
         </h1>
 
-        <div className="flex gap-4 items-center">
+        <div className="hidden lg:flex gap-4 items-center">
           {/*if not logged in */}
           {!token && (
             <>

@@ -61,7 +61,7 @@ const WorkerDashboard = () => {
           {/**edit profile button */}
           <AnimatedButton
             onClick={() => (window.location.href = "/edit-worker-profile")}
-            className="bg-cyan-700 text-white px-4 lg:py-2 mb-4 rounded-lg "
+            className="bg-cyan-700 text-white px-4  mb-4 rounded-lg "
           >
             Edit Profile
           </AnimatedButton>
