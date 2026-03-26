@@ -59,11 +59,10 @@ const ProfilePage = () => {
       formData.append("profilepic", profilepic);
     }
 
-    const res = await api.put("/user/update", formData, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "multipart/form-data",
-      },
+    const res = await api.put("/user/update", {
+      method: "PUT",
+      headers: { Authorization: `Bearer ${token}` },
+      body: formData,
     });
 
     const data = await res.data;
@@ -84,7 +83,7 @@ const ProfilePage = () => {
       <div className="min-h-screen bg-gradient-to-br from-cyan-100 to-white-400 flex justify-center items-start py-20 ">
         {/* MAIN CARD */}
         <div className="w-full max-w-sm md:max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-6">
-          {/* HEADER (LinkedIn style) */}
+          {/* 🔥 HEADER (LinkedIn style) */}
           <div className="flex items-center gap-6">
             <img
               src={user.profilepic}
@@ -104,7 +103,7 @@ const ProfilePage = () => {
             </div>
           </div>
 
-          {/*  CONTENT */}
+          {/* 🔥 CONTENT */}
           {!editMode ? (
             <div className="mt-6 space-y-6">
               {/* About */}
@@ -232,7 +231,7 @@ const ProfilePage = () => {
               <div className="flex gap-3">
                 <AnimatedButton
                   type="submit"
-                  className="flex-1 bg-cyan-500 hover:bg-cyan-600 text-white py-2 rounded-lg font-semibold transition text-center cursor-pointer"
+                  className="flex-1 bg-cyan-500 hover:bg-cyan-600 text-white py-2 rounded-lg font-semibold transition text-center"
                 >
                   Save
                 </AnimatedButton>
@@ -240,7 +239,7 @@ const ProfilePage = () => {
                 <AnimatedButton
                   type="button"
                   onClick={() => setEditMode(false)}
-                  className="flex-1 bg-gray-400 hover:bg-gray-500 text-white py-2 rounded-lg text-center cursor-pointer"
+                  className="flex-1 bg-gray-400 hover:bg-gray-500 text-white py-2 rounded-lg text-center"
                 >
                   Cancel
                 </AnimatedButton>

@@ -75,7 +75,7 @@ const Navbar = () => {
 
               <AnimatedButton
                 onClick={handleLogout}
-                className="px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition shadow-sm cursor-pointer"
+                className="px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition shadow-sm cursor-wait"
               >
                 Logout
               </AnimatedButton>

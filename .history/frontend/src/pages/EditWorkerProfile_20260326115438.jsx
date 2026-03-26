@@ -62,7 +62,6 @@ const ProfilePage = () => {
     const res = await api.put("/user/update", formData, {
       headers: {
         Authorization: `Bearer ${token}`,
-        "Content-Type": "multipart/form-data",
       },
     });
 

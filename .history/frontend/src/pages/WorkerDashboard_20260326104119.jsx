@@ -103,7 +103,7 @@ const WorkerDashboard = () => {
 
               {/**button */}
               <AnimatedButton
-                className={`bg-cyan-700 max-w-24 text-center text-white p-2 rounded-xl mt-2 mb-2 ${isExpired(job) ? "bg-gray-400 cursor-not-allowed" : "bg-green-500 text-white"}`}
+                className={`bg-cyan-700 max-w-10 text-white p-2 rounded-xl mt-2 mb-2 ${isExpired(job) ? "bg-gray-400 cursor-not-allowed" : "bg-green-500 text-white"}`}
                 onClick={() => handleAcceptJob(job._id)}
                 disabled={isExpired(job)}
               >

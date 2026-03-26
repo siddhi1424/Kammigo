@@ -5,7 +5,6 @@ const WorkerProfile = require("../models/WorkerProfile");
 const updateProfile = async (req, res) => {
   try {
     console.log("REQ BODY:", req.body);
-    console.log("File", req.file);
 
     const { name, location, experience, skills, about } = req.body;
 
@@ -55,7 +54,7 @@ const updateProfile = async (req, res) => {
 
     console.log("WORKER SAVED:", worker);
 
-    //  ONLY ONE RESPONSE
+    // ✅ ONLY ONE RESPONSE
     return res.json({
       message: "Profile updated successfully",
       user: updatedUser,

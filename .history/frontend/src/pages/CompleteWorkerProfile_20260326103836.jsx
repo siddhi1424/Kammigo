@@ -76,7 +76,7 @@ const CompleteWorkerProfile = () => {
           {/* BUTTON */}
           <AnimatedButton
             type="submit"
-            className="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-2 rounded-lg font-semibold transition text-center cursor-pointer"
+            className="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-2 rounded-lg font-semibold transition text-center"
           >
             Save Profile
           </AnimatedButton>

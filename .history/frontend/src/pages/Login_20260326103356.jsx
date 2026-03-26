@@ -12,7 +12,6 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("button clicked");
 
     try {
       const response = await api.post("/auth/login", {
@@ -85,11 +84,13 @@ const Login = () => {
               />
             </div>
             <div>
-              <AnimatedButton
-                type="submit"
-                className="w-full text-center bg-cyan-600 hover:bg-cyan-700 rounded-3xl text-white font-semibold py-2 transition duration-300 cursor-pointer"
-              >
-                Login
+              <AnimatedButton>
+                
+                  type="submit"
+                  className="w-full text-center bg-cyan-600 hover:bg-cyan-700 rounded-3xl text-white font-semibold py-2 transition duration-300"
+                >
+                  Login
+                
               </AnimatedButton>
 
               <p className="text-center mt-2 font-semibold text-gray-500">

@@ -12,7 +12,6 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("button clicked");
 
     try {
       const response = await api.post("/auth/login", {

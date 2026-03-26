@@ -223,7 +223,7 @@ const ProfilePage = () => {
               {/* Preview */}
               <div className="flex justify-center">
                 <img
-                  src={preview || user.profilepic}
+                  src={user.profilepic || null}
                   className="w-24 h-24 rounded-full border-4 border-cyan-400 object-cover"
                 />
               </div>

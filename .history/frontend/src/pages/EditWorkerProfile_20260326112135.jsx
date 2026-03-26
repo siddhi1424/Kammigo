@@ -59,7 +59,7 @@ const ProfilePage = () => {
       formData.append("profilepic", profilepic);
     }
 
-    const res = await api.put("/user/update", formData, {
+    const res = await api.put("/update/me", formData, {
       headers: {
         Authorization: `Bearer ${token}`,
         "Content-Type": "multipart/form-data",

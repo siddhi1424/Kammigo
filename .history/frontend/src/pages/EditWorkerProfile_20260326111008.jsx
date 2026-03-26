@@ -59,7 +59,7 @@ const ProfilePage = () => {
       formData.append("profilepic", profilepic);
     }
 
-    const res = await api.put("/user/update", formData, {
+    const res = await api.put("/update/me", formData, {
       headers: {
         Authorization: `Bearer ${token}`,
         "Content-Type": "multipart/form-data",
@@ -84,7 +84,7 @@ const ProfilePage = () => {
       <div className="min-h-screen bg-gradient-to-br from-cyan-100 to-white-400 flex justify-center items-start py-20 ">
         {/* MAIN CARD */}
         <div className="w-full max-w-sm md:max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-6">
-          {/* HEADER (LinkedIn style) */}
+          {/* 🔥 HEADER (LinkedIn style) */}
           <div className="flex items-center gap-6">
             <img
               src={user.profilepic}
@@ -104,7 +104,7 @@ const ProfilePage = () => {
             </div>
           </div>
 
-          {/*  CONTENT */}
+          {/* 🔥 CONTENT */}
           {!editMode ? (
             <div className="mt-6 space-y-6">
               {/* About */}

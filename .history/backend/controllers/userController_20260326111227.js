@@ -55,7 +55,7 @@ const updateProfile = async (req, res) => {
 
     console.log("WORKER SAVED:", worker);
 
-    //  ONLY ONE RESPONSE
+    // ✅ ONLY ONE RESPONSE
     return res.json({
       message: "Profile updated successfully",
       user: updatedUser,
